@@ -10,7 +10,7 @@ While the author of the post does well in describing how to build stuff and whic
 
 Here are the abilities the monliths.
 
-![rymdkapsel monolith abilities](/img/rymdkapsel-monolith-abilities.png)
+<img src="/img/rymdkapsel-monolith-abilities.png" class="img-responsive" alt="Rymdkapsel monolith abilities">
 
 Explore the monoliths in this order:
 
