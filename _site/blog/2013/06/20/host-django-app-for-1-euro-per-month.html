@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Host your Django App for 1€/month - jannikweyrich.com</title>
+    <link href="/css/main.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+<article class="container">
+
+    <header>
+        <div class="row">
+
+            <div class="col-12 col-sm-4">
+                <a href="/">
+                    <div id="portrait-jnk"></div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-8"><h1>Hi, I'm Jannik Weyrich.</h1>
+
+                <p>Entrepreneur and coder. Combining both in my current position as founder & CTO of <a
+                        href="http://particulate.me" target="_blank">Particulate</a>. I studied at the <a
+                        href="http://www.uni-koblenz.de" target="_blank">University of Koblenz</a>, Germany (MSc of
+                    Business and Computer Science).</p>
+
+                <p>I'm interesed in <a href="#what-i-use">technology</a>, traveling, football and music</p></div>
+        </div>
+    </header>
+
+    
+<article>
+    <h1>Host your Django App for 1€/month</h1>
+
+    <p class="date">
+        <time datetime="2013-06-20T00:00:00+02:00">2013-06-20</time>
+    </p>
+    <p>This post describes how you can deploy your Django application on <a href="http://www.uberspace.de">Uberspace</a>. Uberspace is
+an awesome and somewhat unconventional hoster. It’s shared hosting but with a full-fledged Cent-OS command line
+interface offering everything a normal vps does except root access. But if you need software installed that
+needs root access the awesome customer service will help you out instantly. PLUS: They allow you to pay as much
+as you want (but min. 1€ per month). We use Uberspace primarily for demos and small websites.</p>
+
+<p>We also describe a convenient deploy scenario with git post-receive hooks to do super simple deployments without
+much overhead.</p>
+
+<p>Since Uberspace has some technical limitations the setup is a bit different than on a conventional vps or root
+server (e.g. fcgi instead of wsgi). For our own reference and for people looking for a step by step tutorial
+that works without much cross-reading we decided to post our setup.</p>
+
+<p>NOTE: This is how we deploy our apps on Uberspace in detail so it is somewhat opinionated. Feedback is much
+welcome. Just ping Jannik on Twitter (<a href="https://twitter.com/jnk_wyrch">@jnk_wyrich</a>)
+or discuss on <a href="https://news.ycombinator.com/item?id=6768241">Hacker News</a> or <a href="http://www.reddit.com/r/django/comments/1r26t0/host_your_django_app_for_1month/">Reddit</a>.</p>
+
+<h2>Prerequisites</h2>
+
+<p>We gonna keep it brief but show all the necessary steps. Check the <a href="#sources">sources section</a> for
+more background info. We assume you already have your Django project in a Git repo.</p>
+
+<p><strong>Important</strong>: Please add <a href="http://south.aeracode.org/">South</a> to your
+requirements file. Since it’s part of our deploy script.</p>
+
+<h2>The Django settings file</h2>
+
+<p>We just set the static directories and database configuration. The rest of the django settings are up to you.</p>
+<div class="highlight"><pre><code class="python language-python" data-lang="python"><span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="s">&#39;/home/&lt;YOUR_UBERSPACE_USER&gt;/html/static&#39;</span>
+<span class="n">MEDIA_ROOT</span> <span class="o">=</span> <span class="s">&#39;/home/&lt;YOUR_UBERSPACE_USER&gt;/html/uploads&#39;</span>
+
+<span class="n">STATIC_URL</span> <span class="o">=</span> <span class="s">&#39;/static/&#39;</span>
+<span class="n">MEDIA_URL</span> <span class="o">=</span> <span class="s">&#39;/uploads/&#39;</span>
+
+<span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>
+        <span class="s">&#39;NAME&#39;</span><span class="p">:</span> <span class="s">&#39;&lt;YOUR_UBERSPACE_USER&gt;&#39;</span><span class="p">,</span>
+        <span class="s">&#39;USER&#39;</span><span class="p">:</span> <span class="s">&#39;&lt;YOUR_UBERSPACE_USER&gt;&#39;</span><span class="p">,</span>
+        <span class="s">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="s">&#39;&lt;YOUR_MYSQL_PW&gt;&#39;</span><span class="p">,</span> <span class="c"># find it in the following file: ~/.my.cnf</span>
+        <span class="s">&#39;HOST&#39;</span><span class="p">:</span> <span class="s">&#39;/var/lib/mysql/mysql.sock&#39;</span><span class="p">,</span>
+        <span class="s">&#39;PORT&#39;</span><span class="p">:</span> <span class="s">&#39;&#39;</span><span class="p">,</span> <span class="c"># Set to empty string for default.</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>MySQL</h2>
+
+<p>Your Uberspace provides MySQL databases for you to use.</p>
+
+<p>You can access your database data under <code>https://adminer.&lt;YOUR_SERVER_NAME&gt;.uberspace.de/</code>. The
+primary database name and user is the name of your Uberspace user. Your MySQL password is stored in the file
+<code>~/.my.cnf</code> on your Uberspace.</p>
+
+<h2>Python Setup</h2>
+
+<p>To get Python and Django on your Uberspace running you need to do the following steps (described in the official
+<a href="http://uberspace.de/dokuwiki/cool:django">Uberspace Wiki</a>)</p>
+
+<p>To be able to install Python modules:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mkdir -p ~/bin ~/lib/python2.7
+</code></pre></div>
+<p>Install flup for fast-cgi. (WSGI does not work on Uberspace <a href="http://uberspace.de/dokuwiki/cool:django#deployment_mit_fastcgi">see Uberspace
+Wiki</a>).</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">pip-2.7 install flup
+</code></pre></div>
+<h2>How to get your project running</h2>
+
+<p>Now that the basic environment for our Django project is done, we describe how to setup the static and media
+paths and how to deploy your project via git.</p>
+
+<p>First you create a directory structure to store the application in. We made the structure up ourselves. It’s just
+our recommendation. You can obviously use other paths and dir names.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">mkdir -p ~/data/apps
+git init --bare ~/data/git/&lt;YOUR_PROJECTNAME&gt;.git
+vi ~/data/git/&lt;YOUR_PROJECTNAME&gt;.git/hooks/post-receive
+<span class="c"># Update the post-receive hooks permissions</span>
+chmod 755 ~/data/git/&lt;YOUR_PROJECTNAME&gt;.git/hooks/post-receive
+</code></pre></div>
+<p>Paste the following into the file <code>~/data/git/&lt;YOUR_PROJECTNAME&gt;.git/hooks/post-receive</code>.</p>
+
+<p>Fill in your data where <INDICATED>.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
+
+<span class="nv">USER</span><span class="o">=</span>&lt;YOUR_UBERSPACE_USER&gt;
+<span class="c"># e.g. PROJECT_NAME=myproject</span>
+<span class="nv">PROJECT_NAME</span><span class="o">=</span>&lt;YOUR_PROJECTNAME&gt;
+<span class="nv">PROJECT_PATH</span><span class="o">=</span>/home/<span class="nv">$USER</span>/data/apps/<span class="nv">$PROJECT_NAME</span>
+<span class="c"># e.g. STATIC_DIR=$PROJECT_PATH/static</span>
+<span class="nv">STATIC_DIR</span><span class="o">=</span><span class="nv">$PROJECT_PATH</span>/&lt;PATH_TO_YOUR_DJANGO_STATIC_DIR&gt;
+<span class="c"># e.g. REQUIREMENTS_FILE=$PROJECT_PATH/requirements.txt</span>
+<span class="nv">REQUIREMENTS_FILE</span><span class="o">=</span><span class="nv">$PROJECT_PATH</span>/&lt;PATH_TO_YOUR_PIP_REQUIREMENTS_FILE&gt;
+<span class="c"># e.g. MANAGE_PY=$PROJECT_PATH/manage.py</span>
+<span class="nv">MANAGE_PY</span><span class="o">=</span><span class="nv">$PROJECT_PATH</span>/&lt;PATH_TO_YOUR_DJANGO_MANAGE_PY&gt;
+
+killall -u <span class="nv">$USER</span> python2.7
+
+<span class="k">if</span> <span class="o">[</span> ! -d /home/<span class="nv">$USER</span>/data/apps/<span class="nv">$PROJECT_NAME</span>/.git <span class="o">]</span>
+<span class="k">then</span>
+<span class="k">    </span>git clone /home/<span class="nv">$USER</span>/data/git/<span class="nv">$PROJECT_NAME</span>.git /home/<span class="nv">$USER</span>/data/apps/<span class="nv">$PROJECT_NAME</span>
+        pip-2.7 install -r <span class="nv">$REQUIREMENTS_FILE</span>
+    python2.7 <span class="nv">$MANAGE_PY</span> syncdb --noinput
+<span class="k">else</span>
+<span class="k">    </span><span class="nb">unset </span>GIT_DIR
+    <span class="nb">cd</span> <span class="nv">$PROJECT_PATH</span> <span class="o">&amp;&amp;</span> git checkout -- .
+    <span class="nb">cd</span> <span class="nv">$PROJECT_PATH</span> <span class="o">&amp;&amp;</span> git pull
+    pip-2.7 install -r <span class="nv">$REQUIREMENTS_FILE</span>
+<span class="k">fi</span>
+
+<span class="c"># South required to do DB migrations</span>
+python2.7 <span class="nv">$MANAGE_PY</span> migrate
+<span class="nb">cd</span> /var/www/virtual/<span class="nv">$USER</span>/html/static <span class="o">&amp;&amp;</span> rm -rf * .<span class="o">[</span>^.<span class="o">]</span>* ..?*
+mkdir -p /var/www/virtual/<span class="nv">$USER</span>/html/static
+python2.7 <span class="nv">$MANAGE_PY</span> collectstatic --noinput
+mv <span class="nv">$STATIC_DIR</span>/* /var/www/virtual/<span class="nv">$USER</span>/html/static/
+killall -u <span class="nv">$USER</span> python2.7
+
+<span class="nb">exit</span>
+</code></pre></div>
+<p>Add a fast CGI file.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">vi ~/fcgi-bin/&lt;YOUR_PROJECTNAME&gt;.fcgi
+chmod 755 ~/fcgi-bin/&lt;YOUR_PROJECTNAME&gt;.fcgi
+</code></pre></div>
+<p>With the following configuration.</p>
+<div class="highlight"><pre><code class="python language-python" data-lang="python"><span class="c">#!/usr/bin/env python2.7</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c"># Add a custom Python path.</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">&#39;/home/&lt;YOUR_UBERSPACE_USER&gt;/data/apps/&#39;</span><span class="p">)</span>
+<span class="c"># This path links to the dir where your manage.py is located</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">&#39;/home/&lt;YOUR_UBERSPACE_USER&gt;/data/apps/&lt;YOUR_PROJECTNAME&gt;/&#39;</span><span class="p">)</span>
+
+<span class="c"># Set the DJANGO_SETTINGS_MODULE environment variable.</span>
+<span class="c"># The location depends on your project structure</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">&#39;DJANGO_SETTINGS_MODULE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;&lt;YOUR_PROJECTNAME&gt;.settings&#39;</span>
+
+<span class="kn">from</span> <span class="nn">django.core.servers.fastcgi</span> <span class="kn">import</span> <span class="n">runfastcgi</span>
+<span class="n">runfastcgi</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">&#39;threaded&#39;</span><span class="p">,</span> <span class="n">daemonize</span><span class="o">=</span><span class="s">&#39;false&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Setup a .htaccess in your Uberspace’s public directory. Find it here <code>~/html/.htaccess</code>.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">RewriteEngine on
+
+RewriteCond %<span class="o">{</span>REQUEST_FILENAME<span class="o">}</span> !-f
+RewriteRule ^<span class="o">(</span>.*<span class="o">)</span><span class="nv">$ </span>/fcgi-bin/&lt;YOUR_PROJECTNAME&gt;.fcgi/<span class="nv">$1</span> <span class="o">[</span>QSA,L<span class="o">]</span>
+</code></pre></div>
+<h2>Deploying your Django app from your local machine</h2>
+
+<p>Now that your server is setup all that’s left is to deploy your application code to the server.</p>
+
+<p>To do so you need to add a new git remote to the local git repository of your Django project.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">git remote add uberspace ssh://&lt;YOUR_UBERSPACE_USER&gt;@&lt;YOUR_SERVER_NAME&gt;.uberspace.de/home/&lt;YOUR_UBERSPACE_USER&gt;/data/git/&lt;YOUR_PROJECTNAME&gt;
+</code></pre></div>
+<p>Now every time you push to the <code>uberspace</code> remote the post-receive hook we set up before gets
+triggered and does all the steps needed to (re)deploy your Django application. Stuff like pull the application
+code, update the requirements, migrate your database, updating your static files, etc.</p>
+
+<h2>Conclusion</h2>
+
+<p>The setup we described above is a cheap, solid and convenient way to run Django applications. Perfect for small
+projects, experiments or <a href="http://en.wikipedia.org/wiki/Minimum_viable_product">minimum
+    viable products</a> (MVP). Especially when coding experiments or MVPs you might want to update your
+application pretty frequently without the overhead of manual deploys. With this setup all you need to do is
+commit your new code to the <code>uberspace</code> git remote and it’s live.</p>
+
+<p>It’s most certainly not suited for applications with high traffic or big data needs. Uberspace limits the quota
+to 10GB and you share a server with other users. But performance-wise Uberspace’s servers are pretty good. Most
+likely way better than most shared hosters. We did some load tests with <a href="http://www.blitz.io/">blitz.io</a> and the
+results were solid. We might write blog post about it later.</p>
+
+<p>Uberspace&#39;s website is only available in German. Visit this link to get a translated version: <a href="http://translate.google.com/translate?hl=en&amp;sl=auto&amp;tl=en&amp;u=https%3A%2F%2Fuberspace.de%2F">Uberspace via Google Translate</a></p>
+
+<p>If you have questions or want to discuss leave a comment on <a href="https://news.ycombinator.com/item?id=6768241">Hacker News</a> or <a href="http://www.reddit.com/r/django/comments/1r26t0/host_your_django_app_for_1month/">Reddit</a>.</p>
+
+<p>Or ping me on Twitter (<a href="http://twitter.com/jnk_wyrch">@jnk_wyrich</a>)</p>
+
+<p>This is a cross post on <a href="http://jannikweyrich.com/blog/2013/11/20/deploy-django-app-for-1-euro-per-month.html">here</a> and <a href="http://tech.particulate.me/django/2013/11/20/deploy-django-app-for-1-euro-per-month/">Particulates&#39;s
+blog</a>.</p>
+
+<h2><a name="sources" id="sources"></a>Sources</h2>
+
+<p><a href="http://uberspace.de/dokuwiki/cool:django">http://uberspace.de/dokuwiki/cool:django</a></p>
+
+<p><a href="http://uberspace.de/dokuwiki/development:python">http://uberspace.de/dokuwiki/development:python</a></p>
+
+<p><a href="http://uberspace.de/dokuwiki/database:mysql">http://uberspace.de/dokuwiki/database:mysql</a></p>
+
+</article>
+
+    <footer>
+        <p>&copy; Jannik Weyrich 2013 &sdot; <a href="impressum.html">Impressum</a></p>
+    </footer>
+
+</article>
+
+<!-- JavaScript plugins (requires jQuery) -->
+<!--<script src="http://code.jquery.com/jquery.js"></script>-->
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>-->
+
+<!--<script src="/js/main.js"></script>-->
+
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-43356314-1'],
+        ['_anonymizeIp'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+
+</body>
+</html>

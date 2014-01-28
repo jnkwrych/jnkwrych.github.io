@@ -1,0 +1,49 @@
+/* From bootstraps sample */
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+article article {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// ======== Details
+.items p + h4 {
+  margin-top: 28px;
+}
+
+#portrait-jnk{
+  background-image: url(../img/portrait-jnk.jpg);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+// Typography
+
+@header-1-font-size: 22px;
+
+h1, .h1 { font-size: @header-1-font-size }
+h2, .h2 { font-size: @header-1-font-size - 1 }
+h3, .h3 { font-size: @header-1-font-size - 4 }
+h4, .h4 { font-size: @header-1-font-size - 5 }
+
+.date {
+  color: #ccc;
+}

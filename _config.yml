@@ -1,0 +1,9 @@
+timezone: Europe/Berlin
+markdown: redcarpet
+pygments: true
+permalink: /blog/:year/:month/:day/:title.html
+
+redcarpet:
+  extensions: [autolink]
+
+exclude: [README.md, resources, js, libs]

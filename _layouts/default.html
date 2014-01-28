@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}Jannik's personal Website{% endif %} - jannikweyrich.com</title>
+    <link href="/css/main.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+<article class="container">
+
+    <header>
+        <div class="row">
+
+            <div class="col-12 col-sm-4">
+                <a href="/">
+                    <div id="portrait-jnk"></div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-8"><h1>Hi, I'm Jannik Weyrich.</h1>
+
+                <p>Entrepreneur and coder. Combining both in my current position as founder & CTO of <a
+                        href="http://particulate.me" target="_blank">Particulate</a>. I studied at the <a
+                        href="http://www.uni-koblenz.de" target="_blank">University of Koblenz</a>, Germany (MSc of
+                    Business and Computer Science).</p>
+
+                <p>I'm interesed in <a href="#what-i-use">technology</a>, traveling, football and music</p></div>
+        </div>
+    </header>
+
+    {{ content }}
+
+    <footer>
+        <p>&copy; Jannik Weyrich 2013 &sdot; <a href="impressum.html">Impressum</a></p>
+    </footer>
+
+</article>
+
+<!-- JavaScript plugins (requires jQuery) -->
+<!--<script src="http://code.jquery.com/jquery.js"></script>-->
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>-->
+
+<!--<script src="/js/main.js"></script>-->
+
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-43356314-1'],
+        ['_anonymizeIp'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+
+</body>
+</html>
