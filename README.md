@@ -1,4 +1,3 @@
-j7nn7k.github.io
-================
+# jannikweyrich.com
 
 my personal blog
