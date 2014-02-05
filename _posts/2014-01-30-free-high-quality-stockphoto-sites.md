@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 10 Free High Quality Stock Photo Sites
+title: 15 Free High Quality Stock Photo Sites
 ---
 <img src="/img/hasselblad-high-quality-stockphoto-sites-cover.jpg" alt="Hasselblad camera" class="img-responsive" /></a>
 
