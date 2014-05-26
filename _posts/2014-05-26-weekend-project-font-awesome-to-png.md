@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekend project: fa2png.io (Font Awesome to PNG Online Generator)
+title: Weekend project - fa2png.io (Font Awesome to PNG Online Generator)
 ---
 
 This weekend my good friend [stephan](http://twitter.com/minddust) and I decided to start a weekend project. We've done a lot of coding together in the last two - three years. Mostly for the startup http://particule.me, where we worked together for the last two years. After working on this quite large project we felt like I'd be fun to do a small side project. So we decided to build a small app we would use ourselves.
