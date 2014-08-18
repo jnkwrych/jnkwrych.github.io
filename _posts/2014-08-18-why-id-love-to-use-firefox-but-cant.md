@@ -3,7 +3,7 @@ layout: post
 title: Why I'd love to use Firefox but can't
 ---
 
-<img src="/img/survey/firefox-chrome-mibile-on-android-4_4.png" class="img-responsive" alt="regular checkups">
+<img src="/img/firefox-chrome-mibile-on-android-4_4.png" class="img-responsive" alt="regular checkups">
 
 In his article [Choose Firefox Now, Or Later You Won't Get A Choice] (http://robert.ocallahan.org/2014/08/choose-firefox-now-or-later-you-wont.html?m=1) the author Robert O'Callahan makes a very good argument for why we should stop using Chrome and use Firefox instead. And he is absolutely right! Chrome will become the market dominating browser and quite possibly form a massive monopoly.
 
