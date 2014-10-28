@@ -2,6 +2,8 @@
 
 This is my personal blog. It's a jekyll powered static site.
 
+The site is hosted on [Github Pages](https://pages.github.com/).
+
 
 # License
 
