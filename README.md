@@ -1,6 +1,6 @@
 # [jannikweyrich.com](http://jannikweyrich.com)
 
-my personal blog
+This is my personal blog. It's a jekyll powered static site.
 
 
 # License
