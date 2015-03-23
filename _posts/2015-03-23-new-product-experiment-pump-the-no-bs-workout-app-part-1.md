@@ -1,7 +1,8 @@
 ---
 layout: post
-title: New Product Experiment: Pump - The no-BS Workout App - Part 1
+title: New Product Experiment - Pump - The no-BS Workout App - Part 1
 ---
+
 
 As you might know from reading past entries in my blog I like experimenting with new apps and products. Sometimes it goes [well](http://play.google.com/store/apps/details?id=eu.greenrobot.kennzeichen) and sometimes it doesn’t quite work out as [expected](http://memorioapp.de/). Read about my [past product experiments here](2015-03-23-product-experiments-successes-and-fails.md).
 
