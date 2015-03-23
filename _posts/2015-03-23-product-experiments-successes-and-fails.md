@@ -21,7 +21,7 @@ While the survey was still running I setup a landing page and started building a
 
 ## Second Lean Project: fa2png - Online font awesome to png converter
 
-After starting a project that felt like a resource killer in terms of development and sales/marketing I wanted to do something really small. So I decided to build the small web app [fa2png.io](http://fa2png.io) together with my buddy [Stephan](http://www.minddust.io). You can read about fa2png’s story [here] (/blog/2014/05/26/weekend-project-font-awesome-to-png.html). 
+After starting a project that felt like a resource killer in terms of development and sales/marketing I wanted to do something really small. So I decided to build the small web app [fa2png.io](http://fa2png.io) together with my buddy [Stephan](http://www.minddust.com). You can read about fa2png’s story [here] (/blog/2014/05/26/weekend-project-font-awesome-to-png.html). 
 
 In terms of users and learning it was a success. We build the first version really fast and „released“ it via [Hacker News](http://news.ycombinator.com). Since then the user numbers are slowly but steady increasing. By now Stephan is polishing and soon releasing a new version of fa2png. It will be under a different name and will have many new features like more icon fonts etc. I’m sure he will be writing about it on his [blog](http://www.minddust.io).
 
