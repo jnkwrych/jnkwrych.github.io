@@ -4,7 +4,7 @@ title: New Product Experiment - Pump - The no-BS Workout App - Part 1
 ---
 
 
-As you might know from reading past entries in my blog I like experimenting with new apps and products. Sometimes it goes [well](http://play.google.com/store/apps/details?id=eu.greenrobot.kennzeichen) and sometimes it doesn’t quite work out as [expected](http://memorioapp.de/). Read about my [past product experiments here](/blog/2015-03-23-product-experiments-successes-and-fails.html).
+As you might know from reading past entries in my blog I like experimenting with new apps and products. Sometimes it goes [well](http://play.google.com/store/apps/details?id=eu.greenrobot.kennzeichen) and sometimes it doesn’t quite work out as [expected](http://memorioapp.de/). Read about my [past product experiments here](/blog/2015/03/23/product-experiments-successes-and-fails.html).
 
 In this series of articles I'd like to write about the process of developing and marketing my new app project [Pump - The no-Bullshit workout app](http://pump-app.com/). I will lay out my tactics and hope to get feedback from you about them. So here is where we stand an what we have planed:
 
