@@ -48,7 +48,7 @@ Now that the app is out for [Android](http://play.google.com/store/apps/details?
 
 I'm planning to write about the further development, marketing and sales process of the Pumo app here on my blog. Check out part 1:
 
-[New Product Experiment: Pump - The no-BS Workout App - Part 1](/blog/2015-03-23-new-product-experiment-pump-the-no-bs-workout-app-part-1.md)
+[New Product Experiment: Pump - The no-BS Workout App - Part 1](/blog/2015-03-23-new-product-experiment-pump-the-no-bs-workout-app-part-1.html)
 
 I would love to hear your feedback and ideas. Leave comments here... 
 <!--
