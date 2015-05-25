@@ -38,7 +38,7 @@ What do you think?
 
 Please give us feedback on the [mockups](https://moqups.com/j7nn7k/vTLuv5CV) and what we should do differently.
 
-I would love to hear your feedback and ideas. Leave comments here or ping me on Twitter ([@jnk_wyrich](http://twitter.com/jnk_wyrch))
+I would love to hear your feedback and ideas. Leave comments here, on [HN](https://news.ycombinator.com/item?id=9599685) or ping me on Twitter ([@jnk_wyrich](http://twitter.com/jnk_wyrch))
 
 
 Here are the two other posts in this "series" about [previous product experiments](http://jannikweyrich.com/blog/2015/03/23/product-experiments-successes-and-fails.html) and about [the new product experiment Pump part 1](http://jannikweyrich.com/blog/2015/03/23/new-product-experiment-pump-the-no-bs-workout-app-part-1.html)  
