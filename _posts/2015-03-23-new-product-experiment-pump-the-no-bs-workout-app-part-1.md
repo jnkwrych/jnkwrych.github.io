@@ -31,8 +31,5 @@ Up to now the download figures are pretty low, especially for Android. We figure
 
 What do you think? How would you prioritize?
 
-I would love to hear your feedback and ideas. Leave comments here... 
-<!--
-... or discuss [Hacker News](https://news.ycombinator.com/item?id=6768241) or [Reddit](http://www.reddit.com/r/django/comments/1r26t0/host_your_django_app_for_1month/).
--->
-... or ping me on Twitter ([@jnk_wyrich](http://twitter.com/jnk_wyrch))
+
+I would love to hear your feedback and ideas. Leave comments here or ping me on Twitter ([@jnk_wyrich](http://twitter.com/jnk_wyrch))
