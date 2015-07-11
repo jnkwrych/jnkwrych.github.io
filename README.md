@@ -1,7 +1,10 @@
 # [jannikweyrich.com](http://jannikweyrich.com)
 
-my personal blog
+This is my personal blog. It's a [Jekyll](http://jekyllrb.com/) powered static site.
 
+The site is hosted on [Github Pages](https://pages.github.com/). So this repository is contains the live code beeing deliverd when you point your browser to [jannikweyrich.com](http://jannikweyrich.com).
+
+Here's how to [setup a site with Jekyll and Github Pages](https://help.github.com/articles/using-jekyll-with-pages/).
 
 # License
 
