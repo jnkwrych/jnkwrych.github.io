@@ -3,7 +3,7 @@ layout: post
 title: The Importance of Micro Projects
 ---
 
-I worte about my preference for small, well defined projects before. But my main motivation for small projects was to get a [MVP XXX](wiki XXX) running as quickly as possible to test new business ideas.
+I worte about my preference for small, well defined projects before. But my main motivation for small projects was to get a [MVP](http://theleanstartup.com/principles#develop_mvp) running as quickly as possible to test new business ideas.
 
 But after talking to my friend Paul today I realized that projects that can be completed in a very short amount of time also have a huge impact on motivation and getting stuff done.
 
