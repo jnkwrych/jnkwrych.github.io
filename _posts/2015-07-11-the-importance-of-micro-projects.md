@@ -5,7 +5,7 @@ title: The Importance of Micro Projects
 
 I worte about my preference for small, well defined projects before. But my main motivation for small projects was to get a [MVP XXX](wiki XXX) running as quickly as possible to test new business ideas.
 
-But after talking to my friend Paul today I realized that projects that can be compled in a very short amount of time also have a huge impact on motivation and getting stuff done.
+But after talking to my friend Paul today I realized that projects that can be completed in a very short amount of time also have a huge impact on motivation and getting stuff done.
 
 He for instance has heaps of great ideas. Some of them are business ideas, some are personal projects he is passionate about like photography, and some are both. But he strugles with getting the projects started in the first place.
 
@@ -24,6 +24,6 @@ My friend's main concern about these kinds of short projects was that the output
 
 Completing a project or piece of work within a "micro project" doesn't mean that you can't go on working on that piece later, of course! 
 
-Getting stuff out there quickly also doesn't mean you shouldn't spent time on long term projects in general. **Micro projects** will have a potitive impact on those projects as well. You will feel a huge boost in productivity, inspiration and motivation.
+Getting stuff out there quickly also doesn't mean you shouldn't spent time on long term projects in general. **Micro projects** will have a positive impact on those projects as well. You will feel a huge boost in productivity, inspiration and motivation.
 
 What are your thoughts on this? What kind of micro projects did you do in the past?
