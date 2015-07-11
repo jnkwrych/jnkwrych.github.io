@@ -27,3 +27,5 @@ Completing a project or piece of work within a "micro project" doesn't mean that
 Getting stuff out there quickly also doesn't mean you shouldn't spent time on long term projects in general. **Micro projects** will have a positive impact on those projects as well. You will feel a huge boost in productivity, inspiration and motivation.
 
 What are your thoughts on this? What kind of micro projects did you do in the past?
+
+Discuss in the comments or on [Hacker News](https://news.ycombinator.com/item?id=9870082)
