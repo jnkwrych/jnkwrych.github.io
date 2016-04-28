@@ -1,8 +1,6 @@
 timezone: Europe/Berlin
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
-
-redcarpet:
-  extensions: [autolink]
+highlighter: rouge
 
 exclude: [README.md, resources, js, libs]
