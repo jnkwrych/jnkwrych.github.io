@@ -1,6 +1,5 @@
 timezone: Europe/Berlin
 markdown: kramdown
-pygments: true
 permalink: /blog/:year/:month/:day/:title.html
 
 redcarpet:
