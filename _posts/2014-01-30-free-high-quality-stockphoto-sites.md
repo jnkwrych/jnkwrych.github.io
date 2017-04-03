@@ -28,7 +28,7 @@ _Update 2013-02-05_ Yeah, added another 5 sites from [Dustin Senos' arcticle](ht
 * http://imcreator.com/free
 
 
-<h2>Free (stock) photos for commercial use Test</h2>
+<h2>Free (stock) photos for commercial use</h2>
 These are the well known older players in the stock photo game.
 
 * <a href="http://www.sxc.hu/" target="_blank">http://www.sxc.hu/</a>
