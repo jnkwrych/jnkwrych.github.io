@@ -14,3 +14,7 @@ From a usability point of view especially mobile Chrome on Android is in a class
 From a developers point of view I like the Chrome tools much better than Firefox'. They feel snappier and go out of your way.
 
 If Chrome and Firefox had the exact same UI I would definitely prefer Firefox to keep the web a more innovative and open place but right now it feels too clumsy to me. I hope the core developers of Firefox will slim it down a bit and drag me away from the dark side :-)
+
+
+UPDATE Juli 2021
+I'm using Firefox on mobile and desktop now and I enjoy it a lot more than when I wrote this post. Still not quite as enojyable as Chrome but close engough :) 
