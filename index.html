@@ -3,7 +3,26 @@ layout: default
 ---
 
 <article>
-    <h2>Work</h2>
+    <h2>Blog</h2>
+
+    <p>More recent articles I wrote at <a href="https://blog.brickmakers.de/author/jannik-weyrich>BRICKMAKERS' blog</a></p>
+        
+    <p>Archive of random thoughts</p>
+    
+    {% for post in site.posts limit: 10 %}
+        <p>
+            <a href="{{ post.url }}">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+                - {{ post.title }}
+            </a>
+        </p>
+    {% endfor %}
+
+</article>
+
+        
+<article>
+    <h2>Work (out of date)</h2>
 
     <p>Some projects I worked on</p>
     
@@ -54,47 +73,29 @@ layout: default
         </div>
     </div>
 </article>
-
-<article>
-    <h2>Blog</h2>
-
-    <p>More recent articles I wrote at <a href="https://blog.brickmakers.de/author/jannik-weyrich>BRICKMAKERS' blog</a></p>
         
-    <p>Archive of random thoughts</p>
-    
-    {% for post in site.posts limit: 10 %}
-        <p>
-            <a href="{{ post.url }}">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
-                - {{ post.title }}
-            </a>
-        </p>
-    {% endfor %}
-
-</article>
-
+        
 <article>
     <h2 id="tech-i-use">What i use</h2>
 
     <h3>Hardware</h3>
 
-    <p>Macbook pro retina 13", Western Digital WD Elements SE Portable external HDD (1TB, 2,5", USB 3.0) for time
-        machine backups, Nexus 5, Nexus 7, VW Golf 5 1.4 tsi Style Edition</p>
+    <p>Macbook pro retina 15", Google Pixel 3XL, Seat Tarraco (7 seats)</p>
 
     <h3>Most used Software</h3>
 
-    <p>PyCharm (for python and web dev), Xamarin Studio (for Android and iOS dev), Sublime Text 3 + vim ( for ruby dev, server configs and basic text editing), Sourcetree (git
-        gui), Gmail, Chrome (Android and OSX)</p>
+    <p>Outlook, Excel, Firefox (Manager Stuff :-D ) <del>PyCharm (for python and web dev), Xamarin Studio (for Android and iOS dev), Sublime Text 3 + vim ( for ruby dev, server configs and basic text editing), Sourcetree (git
+        gui), Gmail, Chrome (Android and OSX)</del></p>
 
     <h3>Cloud Services</h3>
 
-    <p>Github, DigitalOcean, Bitbucket, Dropbox</p>
+    <p>Github, MS O365/Azure</p>
 
     <h3>Favourite websites</h3>
 
     <p><a href="http://news.ycombinator.com" target="_blank">Hacker News</a>, <a
-            href="http://www.theverge.com" target="_blank">The Verge</a>, <a
-            href="http://www.imdb.com" target="_blank">IMDB</a></p>
+            href="http://www.zeit.de" target="_blank">Zeit.de</a>, <a
+            href="http://www.youtube.com" target="_blank">Youtube</a></p>
 </article>
 
 <article>
