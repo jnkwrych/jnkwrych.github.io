@@ -58,8 +58,10 @@ layout: default
 <article>
     <h2>Blog</h2>
 
-    <p>Random thoughts and updates about what I'm up to.</p>
-
+    <p>More recent articles I wrote at <a href="https://blog.brickmakers.de/author/jannik-weyrich>BRICKMAKERS' blog</a></p>
+        
+    <p>Archive of random thoughts</p>
+    
     {% for post in site.posts limit: 10 %}
         <p>
             <a href="{{ post.url }}">
