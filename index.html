@@ -1,27 +1,6 @@
 ---
 layout: default
 ---
-
-<article>
-    <h2>Blog</h2>
-
-    <p>
-        More recent articles I wrote at <a href="https://blog.brickmakers.de/author/jannik-weyrich">BRICKMAKERS' blog</a>
-    </p>
-        
-    <p>Archive of random thoughts</p>
-    
-    {% for post in site.posts limit: 10 %}
-        <p>
-            <a href="{{ post.url }}">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
-                - {{ post.title }}
-            </a>
-        </p>
-    {% endfor %}
-
-</article>
-
         
 <article>
     <h2>Work</h2>
@@ -88,7 +67,7 @@ layout: default
 </article>
 
 <article>
-    <h2>Misc</h2>
+    <h2>Stuff about me in the web</h2>
     <p>
         <a href="https://www.hilda-gymnasium.org/aktuelles-detailansicht/einblicke-in-die-it-berufswelt"
            target="_blank">Article from March 2023 on an Orientation Workshop for high school IT students I hosted</a></p>
@@ -103,28 +82,40 @@ layout: default
            target="_blank">Article from the Rhein Zeitung about Socialfunders winning the <em>Rhineland Palatinate Idea
             Contest 2012</em> (Mai 26th 2012)</a></p>
 </article>
+
+
+<article>
+    <h2>Blog</h2>
         
+    <p>Archive of random thoughts & articles</p>
+
+    {% for post in site.posts limit: 10 %}
+        <p>
+            <a href="{{ post.url }}">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+                - {{ post.title }}
+            </a>
+        </p>
+    {% endfor %}
+
+    <p>
+        Articles I wrote at <a href="https://blog.brickmakers.de/author/jannik-weyrich">BRICKMAKERS' blog</a>
+    </p>
+
+</article>
         
 <article>
-    <h2 id="tech-i-use">What i use</h2>
+    <h2 id="tech-i-use">Work related tech I use regularly</h2>
 
     <h3>Hardware</h3>
-
-    <p>Macbook Pro M1 15", Google Pixel 7, Mercedes EQB (7 seats)</p>
+    <p>Macbook Pro M1 15", Google Pixel 7</p>
 
     <h3>Most used Software these days</h3>
-
     <p>Microsft Teams, MS Office, ChatGPT, Firefox, Hubspot, PowerBI, Visual Studio Code</p>
 
     <h3>Cloud Services</h3>
-
     <p>Github, MS O365/Azure</p>
-
-    <h3>Favourite websites</h3>
-
-    <p><a href="http://news.ycombinator.com" target="_blank">Hacker News</a>, <a
-            href="http://www.zeit.de" target="_blank">Zeit.de</a>, <a
-            href="http://www.youtube.com" target="_blank">Youtube</a></p>
+    
 </article>
 
 <article>
@@ -138,7 +129,7 @@ layout: default
                     <img src="http://stackoverflow.com/users/flair/268125.png" width="208" height="58" alt="profile for j7nn7k at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for j7nn7k at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
                 </a>
             </p>
-            <p><a href="https://github.com/j7nn7k" target="_blank">GitHub</a>  &middot; <a href="http://www.twitter.com/jnk_wyrch" target="_blank">Twitter</a>  &middot; <a href="https://www.xing.com/profiles/Jannik_Weyrich" target="_blank">Xing</a>  &middot; <a href="http://www.linkedin.com/pub/jannik-weyrich/29/955/6b7" target="_blank">Linked in</a></p>
+            <p><a href="https://github.com/j7nn7k" target="_blank">GitHub</a>  &middot; <a href="http://www.twitter.com/jnk_wyrch" target="_blank">Twitter</a> &middot; <a href="http://www.linkedin.com/pub/jannik-weyrich/29/955/6b7" target="_blank">LinkedIn</a></p>
         </div> 
     </div>
 </article>
