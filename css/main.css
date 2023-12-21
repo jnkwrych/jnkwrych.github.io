@@ -34,4 +34,6 @@ a:hover, a:focus {
   text-decoration-color: #015196;
 }
 
-
+.date {
+  color: #595959;
+}
