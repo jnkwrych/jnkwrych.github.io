@@ -23,6 +23,8 @@ body, html, p {
     display: flex;
     align-items: center;
 }
+
+/* increase accessability */
 a {
   text-decoration: underline;
   text-decoration-color: rgba(1,81,150,0.3);
@@ -35,5 +37,9 @@ a:hover, a:focus {
 }
 
 .date {
-  color: #595959;
+  color: #595959
+}
+
+.alert-warning {
+  color: #685027
 }
