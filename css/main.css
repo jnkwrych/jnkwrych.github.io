@@ -25,5 +25,13 @@ body, html, p {
 }
 a {
   text-decoration: underline;
-  text-decoration-color: rgba(66,139,202,0.3);
+  text-decoration-color: rgba(1,81,150,0.3);
+  color: #015196;
 }
+
+a:hover, a:focus {
+  color: #015196;
+  text-decoration-color: #015196;
+}
+
+
