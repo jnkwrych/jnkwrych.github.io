@@ -58,6 +58,47 @@ h4, .h4 { font-size: @header-1-font-size - 5 }
 }
 
 
+/* 
+Fallback Styles because Less is not compiled with github automatically
+*/
+
+body, html, p {
+  font-size: 16px;
+}
+
+.display-flex-center {
+    display: flex;
+    align-items: center;
+}
+
+/* increase accessability */
+a {
+  text-decoration: underline;
+  text-decoration-color: rgba(1,81,150,0.3);
+  color: #015196;
+}
+
+a:hover, a:focus {
+  color: #015196;
+  text-decoration-color: #015196;
+}
+
+.date {
+  color: #595959
+}
+
+.alert-warning {
+  color: #685027
+}
+
+footer {
+  color: #333
+}
+
+/* 
+END Fallback Styles because Less is not compiled with github automatically
+*/
+
 // Code format styles
 .hll { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */

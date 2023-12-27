@@ -9,14 +9,16 @@ When hooking up your virtual server or droplet as they are called at Digital Oce
 
 For United Domains that leads to errors like:
 
-```
+
+{% highlight terminal %}
 Der angegebene Nameserver antwortet nicht autoritativ für Ihre Domain.
-```
+{% endhighlight %}
+
 or
 
-```
+{% highlight terminal %}
 Given nameserver does not answer authoritatively for your domain.
-```
+{% endhighlight %}
 
 ## Solution
 You must first add the A record in your Digital Ocean's console so United Domain's verification process knows that there is a server who can handle requests to your domain. 
