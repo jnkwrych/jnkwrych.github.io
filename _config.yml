@@ -6,5 +6,13 @@ highlighter: rouge
 exclude: [README.md, resources, js, libs]
 
 url: "https://jannikweyrich.com" # the base hostname & protocol for your site
+
+# SEO Stuff
+title: "Jannik Weyrich - Entrepreneur and business leader with expertise in Product Management and Strategy"
+description: "Experienced entrepreneur and business leader with expertise in Product Management and Strategy. Holds an M.Sc. in Business and Computer Science from the University of Koblenz. Passionate about technology, business, and travel."
+author: "Jannik Weyrich"
+locale: "en"
+
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
