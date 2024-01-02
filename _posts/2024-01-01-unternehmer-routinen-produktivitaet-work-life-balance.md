@@ -10,6 +10,8 @@ In diesem Beitrag stelle ich meine Checkliste vor, die immer auf meinem Schreibt
 
 Ich trenne hierbei nicht strikt nach "privat" und "beruflich", da ich für mich diese Bereiche nicht zu 100% trennen kann und möchte.
 
+<img src="/img/meine-gewonheiten-habits-checklist.jpg" class="img-fluid" alt="Checkliste meiner Unternehmer-Habits und persönlichen Routinen aus den Jahren 2023 und 2024">
+
 ### Meine tägliche Checkliste
 
 Ich habe eine Reihe von Gewohnheiten, die mir helfen, produktiv und motoviert an meinen Zielen zu arbeiten:
@@ -37,7 +39,7 @@ Einmal pro Woche reflektiere ich über meine Fortschritte und Herausforderungen:
 
 Ich habe eine Vorlage für mich erstellt, die ich ausgedruckt stets auf meinem Schreibtisch liegen habe. Sie hilft mir, meine täglichen und wöchentlichen Routinen zu überblicken und zu verfolgen. 
 
-Vielleicht ist sie auch für dich ein guter Startpunkt, um deine eigenen Gewohnheiten zu entwickeln oder anzupassen. Du kannst meine [Habits Checkliste hier](https://github.com/jnkwrych/jnkwrych.github.io/raw/master/_posts/Habits-Gewohnheiten-Checkliste.xlsx.zip) herunterladen und an deine persönlichen Bedürfnisse und Ziele anpassen.
+Vielleicht ist sie auch für dich ein guter Startpunkt, um deine eigenen Gewohnheiten zu entwickeln oder anzupassen. Du kannst meine [Habits Checkliste hier](https://github.com/jnkwrych/jnkwrych.github.io/blob/master/files/Habits-Gewohnheiten-Checkliste.xlsx.zip) herunterladen und an deine persönlichen Bedürfnisse und Ziele anpassen.
 
 ### Literaturempfehlungen
 
