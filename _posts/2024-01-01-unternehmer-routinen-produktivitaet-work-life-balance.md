@@ -39,7 +39,7 @@ Einmal pro Woche reflektiere ich über meine Fortschritte und Herausforderungen:
 
 Ich habe eine Vorlage für mich erstellt, die ich ausgedruckt stets auf meinem Schreibtisch liegen habe. Sie hilft mir, meine täglichen und wöchentlichen Routinen zu überblicken und zu verfolgen. 
 
-Vielleicht ist sie auch für dich ein guter Startpunkt, um deine eigenen Gewohnheiten zu entwickeln oder anzupassen. Du kannst meine [Habits Checkliste hier](https://github.com/jnkwrych/jnkwrych.github.io/raw/master/files/Habits-Gewohnheiten-Checkliste.xlsx.zip) herunterladen und an deine persönlichen Bedürfnisse und Ziele anpassen.
+Vielleicht ist sie auch für dich ein guter Startpunkt, um deine eigenen Gewohnheiten zu entwickeln oder anzupassen. Du kannst meine [Habits-Checkliste hier](https://github.com/jnkwrych/jnkwrych.github.io/raw/master/files/Habits-Gewohnheiten-Checkliste.xlsx.zip) herunterladen und an deine persönlichen Bedürfnisse und Ziele anpassen.
 
 ### Literaturempfehlungen
 
