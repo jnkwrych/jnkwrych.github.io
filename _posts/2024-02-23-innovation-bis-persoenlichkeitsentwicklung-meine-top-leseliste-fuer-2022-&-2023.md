@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Von Innovation bis Persönlichkeitsentwicklung - Meine Top-Leseliste für 2022 & 2023
+title: Von Innovation - Persönlichkeitsentwicklung - Meine Top-Leseliste für 2022 & 23
+description: Meine Bücherliste aus 2022 & 2023, die Unternehmertum, persönliche Entwicklung und ökonomisches Wissen abdeckt, bewertet anhand einer vierstufigen Skala zur Inspiration und Weiterbildung.
 ---
 
-Meine Rangliste der Bücher aus den letzten 2 Jahren.
+Meine Bücherrangliste aus 2022 & 2023, mit Fokus auf Unternehmertum & persönlicher Entwicklung, bewertet anhand einer vierstufigen Skala.
 
 <img src="/img/book-from-korea.jpg" class="img-fluid" alt="Das Bild Zeit ein Koreanisched Buch auf unserer Ost-Asien Reise im Jahr 2018. Das Bild ist das Titelbild für den Blog Post Meine Bücher aus 2022 & 2023">
 
 In den vergangenen zwei Jahren habe ich einige Büchern gelesen, um mich als Unternehmer weiter zu verbessern, ohne dabei meine Familie zu vernachlässigen.
 
-Viele Bücher in der folgenden Liste haben mir bei diesen beiden wichtigen Aspekten geholfen. Manche mehr, manche weniger, einige wenige garnicht :-)
+Viele Bücher in der folgenden Liste haben mir bei diesen beiden wichtigen Aspekten geholfen. Manche mehr, manche weniger, einige (wenige) garnicht :-)
 
 Um meine Erfahrungen zu teilen und euch ein wenig Zeit zu sparen, habe ich eine einfache 4-Punkte-Skala verwendet, die meine persönlichen Empfehlungen widerspiegelt. Ziel dieser Liste ist es, als Inspiration zu dienen. Ich schätze solche Übersichten selbst sehr, da sie mir oft neue Leseideen bieten, die zu meinen Interessen passen. Ich hoffe ihr findet hier ebenfalls Anregungen, die eurem Geschmack entsprechen.
 
