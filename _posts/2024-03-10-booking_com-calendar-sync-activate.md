@@ -14,7 +14,6 @@ Here's how I resolved it:
 
 > Navigate to **Property** > **Property Layout** (not *exactly* intuitive), and set the **Number of apartments (of this type)** to **1**.
 
-
 This insight could be a real time-saver for many, sparing you both time and frustration.
 
 Furthermore, if you're looking to **integrate your Airbnb and Booking.com calendars**, Airbnb offers a [helpful guide](https://www.airbnb.de/help/article/99) on retrieving your listing's calendar link and enabling two-way synchronization.
