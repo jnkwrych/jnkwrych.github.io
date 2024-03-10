@@ -11,13 +11,11 @@ But we see that the competition in our home town Koblenz is getting much tougher
 
 But I could not find the menu item for syncing the calendars described in the article.
 
-The clue to where 
-
 One of the main problems with the booking.com interface is the not very user friendly concept of just not showing settings or configuration if they are not possible because of other configuration settings. 
   
   A better way woudld be to show all configurations options but disabeling them if they are not possible but giving the user a hint which other configuration setting blocks the item.
 
-  Anyways here is what I had to do.. I cklicked through ALL menu items in the booking.com admin backend.
+  Anyways here is what I had to do.. I cklicked through ALL menu items in the booking.com admin backend. The clue came from the following paragraph in the article:
 
 
   '''
@@ -31,3 +29,5 @@ And change "Number of apartments (of this type)" to 1
 
 
   Hope this saves someone a bit of time and nerves. 
+
+  ADD TWO Images
