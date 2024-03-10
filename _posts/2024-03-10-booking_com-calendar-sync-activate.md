@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigating Calendar Sync on Booking.com and Airbnb: Tips and Tricks
+title: Navigating Calendar Sync on Booking.com and Airbnb
 description: Unlock the secrets to seamlessly syncing your Booking.com and Airbnb calendars with our comprehensive guide. Learn practical tips and tricks to overcome common obstacles and streamline your property management process. Save time and avoid frustration with our expert advice.
 ---
 
