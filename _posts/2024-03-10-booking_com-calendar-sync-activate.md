@@ -10,7 +10,7 @@ The article highlighted a crucial point: **calendar syncing is limited** to prop
 
 Realizing my setup might be incorrect, I dove into the Booking.com admin backend, a maze of menus and options. After much exploration, I found the elusive setting critical for enabling the sync.
 
-== Here's how I resolved it
+## Here's how I resolved it
 
 > Navigate to **Property** > **Property Layout** (not *exactly* intuitive), and set the **Number of apartments (of this type)** to **1**.
 
