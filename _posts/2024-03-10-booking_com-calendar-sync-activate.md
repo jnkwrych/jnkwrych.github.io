@@ -31,3 +31,6 @@ And change "Number of apartments (of this type)" to 1
   Hope this saves someone a bit of time and nerves. 
 
   ADD TWO Images
+
+
+This is how to get the calendar link from your airbnb listing: https://www.airbnb.de/help/article/99
