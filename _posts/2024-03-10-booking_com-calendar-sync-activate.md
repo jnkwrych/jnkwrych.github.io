@@ -1,36 +1,25 @@
-The booking.com interface for hosts is confusing, to put it mildly. 
-We used Airbnb for the first 7 years since we startet our small short termin retantal business. 
+---
+layout: post
+title: Unlock the secrets to seamlessly syncing your Booking.com and Airbnb calendars with our comprehensive guide. Learn practical tips and tricks to overcome common obstacles and streamline your property management process. Save time and avoid frustration with our expert advice.
+---
 
-But we see that the competition in our home town Koblenz is getting much tougher. So we decided to also list on booking.com
+Recently, I was trying to sync my calendars between Booking.com and Airbnb. During my search, I stumbled upon [this article](https://partner.booking.com/en-gb/help/rates-availability/extranet-calendar/syncing-your-bookingcom-calendar-third-party-calendars) from Booking.com. However, when I tried to follow the steps outlined, I hit a snag—I couldn't find the mentioned menu option for syncing the calendars.
 
-  While the Airbnb host experience is also quite quirky since they tend to change things up in the interface all the time, it's relatively easy to manage our properties.
+The article explains that calendar syncing isn't available for all types of properties. Specifically, your property must have 20 or fewer room types and only one unit per room type. Moreover, it can't be using XML connectivity services like property management systems or channel managers.
 
-  Anyways, I wanted to share some tips for booking.com where I did not find any helpful articles.
+It dawned on me that I might have accidentally set up our listing to indicate we have more than one unit per room type. The real challenge was locating this specific setting, as it wasn't exactly straightforward. I navigated through most of the menu items and pages on the Booking.com admin backend before finally uncovering the necessary setting to enable calendar sync.
 
-  Lately we wanted to sync calendars between booking.com and Airbnb. I found this artice from booking https://partner.booking.com/en-gb/help/rates-availability/extranet-calendar/syncing-your-bookingcom-calendar-third-party-calendars
+Here's the step that did the trick:
+´´´
+Navigate to **Property** > **Property Layout** (yes, very intuitive :D), then adjust the **Number of apartments (of this type)** to **1**
+´´´
 
-But I could not find the menu item for syncing the calendars described in the article.
+I hope sharing my experience saves you some time and frustration.
 
-One of the main problems with the booking.com interface is the not very user friendly concept of just not showing settings or configuration if they are not possible because of other configuration settings. 
-  
-  A better way woudld be to show all configurations options but disabeling them if they are not possible but giving the user a hint which other configuration setting blocks the item.
-
-  Anyways here is what I had to do.. I cklicked through ALL menu items in the booking.com admin backend. The clue came from the following paragraph in the article:
-
-
-  '''
-Calendar syncing is not available for all property types. To import or export calendars, your property needs to have 20 room types or less, and a maximum of one unit per room type. Your property also can’t use XML connectivity services like property management systems or channel managers.
-  '''
+For those interested in integrating their Airbnb and Booking.com calendars, here's the [guide from Airbnb](https://www.airbnb.de/help/article/99) on obtaining your Airbnb listing's calendar link and setting up two-way syncing between Airbnb and Booking calendars.
 
 
-  I had to go to "property"
-  Property Layout (very intuitive :D )
-And change "Number of apartments (of this type)" to 1
+<img src="/img/blog-posts/booking-property-layout-to-make-calendar-syncing-possible-01.png" class="img-fluid" alt="Step-by-step navigation through Booking.com admin interface to Property Layout">
 
 
-  Hope this saves someone a bit of time and nerves. 
-
-  ADD TWO Images
-
-
-This is how to get the calendar link from your airbnb listing: https://www.airbnb.de/help/article/99
+<img src="/img/blog-posts/booking-property-layout-to-make-calendar-syncing-possible-02.png" class="img-fluid" alt="Correct setting adjustment in Booking.com's Property Layout menu for calendar sync">
