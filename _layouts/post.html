@@ -1,14 +1,52 @@
----
-layout: default
-image: /img/portrait-jnk@2x.jpg
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% assign post = page %}
-<article class="post-wrapper">
-    <h1>{{ post.title }}</h1>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+      </style>
+    <link href="/css/main.css" rel="stylesheet" media="screen">
 
-    <p class="date">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
-    </p>
-    {{ content }}
+    {% seo %}
+
+</head>
+
+<body>
+
+<article class="container">
+
+    <header>
+        <div class="row display-flex-center">
+
+            <div class="col-12 col-sm-4">
+                <a href="/" aria-label="Go back to start page">
+                    <div id="portrait-jnk"></div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-8">
+                <strong>Jannik's Blog</strong>
+            </div>
+        </div>
+    </header>
+
+    {% assign post = page %}
+    <article class="post-wrapper">
+        <h1>{{ post.title }}</h1>
+        
+        <p class="date">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+        </p>
+        {{ content }}
+    </article>
+
+
+    <footer>
+        <p>&copy; Jannik Weyrich 2013 - {{ site.time | date: '%Y' }} &sdot; <a href="/impressum.html">Impressum</a></p>
+    </footer>
+
 </article>
+
+</body>
+</html>
