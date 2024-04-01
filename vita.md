@@ -8,7 +8,7 @@ last_modified_at: 2024-04-30T00:00:00+01:00
 
 Hello! I'm Jannik Weyrich, a business leader and entrepreneur passionate about leveraging technology to streamline business operations, with a focus on B2B software development. My expertise in Product Management and Strategy is grounded in a strong blend of business savvy and technical know-how, thanks to my academic background in Business and Computer Science, and hands-on experience from various client engagements and my own entrepreneurial ventures.
 
-<img alt="My family at Kirstenbosch National Botanical Garden, near Cape Town South Africa" src="/img/weyrich_family_kirstenbosch_botanical_garden_2021.jpg">
+<img alt="My family at Kirstenbosch National Botanical Garden, near Cape Town South Africa" src="/img/weyrich_family_kirstenbosch_botanical_garden_2021.webp">
 <small>Kirstenbosch Botanical Garden, near Cape Town in 2021.</small>
 <br>
 <br>
@@ -27,9 +27,10 @@ To keep the balance, you'll find me hitting the weights at a gym or occasionally
 
 ### Languages
 
-- **English (Fluent; professional proficiency)**
-- **French (Conversational; skilled in croissant negotiations)**
-- **Spanish (Conversational; confident in urban navigation and coffee ordering)**
+- German (Native)
+- English (Fluent; professional proficiency)
+- French (Conversational; skilled in croissant negotiations)
+- Spanish (Conversational; confident in urban navigation and coffee ordering)
 
 ---
 
