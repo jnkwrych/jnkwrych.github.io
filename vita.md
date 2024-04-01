@@ -6,12 +6,10 @@ last_modified_at: 2024-04-30T00:00:00+01:00
 
 ### About Me
 
-Hello! I'm Jannik Weyrich, a business leader and entrepreneur passionate about leveraging technology to streamline business operations, with a focus on B2B software development. My expertise in Product Management and Strategy is grounded in a strong blend of business savvy and technical know-how, thanks to my academic background in Business and Computer Science, and hands-on experience from various client engagements and my own entrepreneurial ventures.
+I'm an entrepreneur passionate about leveraging technology to streamline business operations, with a focus on B2B software solutions. My expertise in Product Management and Strategy is grounded in a strong blend of business savvy and technical know-how, thanks to my academic background in Business and Computer Science, and hands-on experience from various client engagements and my own entrepreneurial ventures.
 
-<img alt="My family at Kirstenbosch National Botanical Garden, near Cape Town South Africa" src="/img/weyrich_family_kirstenbosch_botanical_garden_2021.webp">
+<img alt="My family at Kirstenbosch National Botanical Garden, near Cape Town South Africa" src="/img/weyrich_family_kirstenbosch_botanical_garden_2021.webp" class="img-fluid">
 <small>Kirstenbosch Botanical Garden, near Cape Town in 2021.</small>
-<br>
-<br>
 
 I was raised in a [small town](https://de.wikipedia.org/wiki/Wolfersheim) in the South-West of Germany. After my studies in Koblenz I settled there but traveling is a big passion of mine, especially with my wife, our two daughters and son in tow. My favorite destinations are bustling Southeast Asia and the beautiful landscapes of South Africa.
 
