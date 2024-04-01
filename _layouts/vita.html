@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+      </style>
+    <link href="/css/main.css" rel="stylesheet" media="screen">
+
+    {% seo %}
+
+</head>
+
+<body>
+
+<article class="container">
+
+    <header>
+        <div class="row display-flex-center">
+
+            <div class="col-12 col-sm-4">
+                <a href="/" aria-label="Go back to start page">
+                    <div id="portrait-jnk"></div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-8"><h1>Vita Jannik Weyrich.</h1>
+              **B2B Tech Entrepreneur | Driving Efficiency and Innovation**
+            📍 [Koblenz, Germany](https://maps.app.goo.gl/C6RuwFCu4XtoMBa17)
+            👋 [Me @ LinkedIn](https://www.linkedin.com/in/jannik-weyrich-6b795529) 
+            </div>
+        </div>
+    </header>
+
+    {{ content }}
+
+    <footer>
+        <p>&copy; Jannik Weyrich 2013 - {{ site.time | date: '%Y' }} &sdot; <a href="/impressum.html">Impressum</a></p>
+    </footer>
+
+</article>
+
+</body>
+</html>
