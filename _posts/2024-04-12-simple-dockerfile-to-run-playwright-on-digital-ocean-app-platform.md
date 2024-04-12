@@ -18,4 +18,6 @@ Here is the script I used to deploy my Playwright Node app to Digital Ocean's Ap
 
 <script src="https://gist.github.com/jnkwrych/c647d8653515dc676f7369507795b9d8.js"></script>
 
+This [post](https://medium.com/@sumitbhanushali16/production-ready-nodejs-build-using-docker-and-npm-4bda3d28f6ea) helped me get up to speed with the Docker basics.
+
 I you have any suggestions or run into problems: [Let's chat here](https://gist.github.com/jnkwrych/c647d8653515dc676f7369507795b9d8#file-dockerfile)
