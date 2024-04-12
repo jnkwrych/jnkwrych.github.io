@@ -17,3 +17,5 @@ Since I did not want to deploy and manage a full-blown VPS, or "Droplet" as Digi
 Here is the script I used to deploy my Playwright Node app to Digital Ocean's App Platform. Bear in mind that I have not tested the script in a production environment, but I hope it can help you get your project up and running more quickly.
 
 <script src="https://gist.github.com/jnkwrych/c647d8653515dc676f7369507795b9d8.js"></script>
+
+I you have any suggestions or run into problems: [Let's chat here](https://gist.github.com/jnkwrych/c647d8653515dc676f7369507795b9d8#file-dockerfile)
