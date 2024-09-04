@@ -34,9 +34,14 @@ To keep the balance, you'll find me hitting the weights at a gym or occasionally
 
 ### Professional Experience
 
+**Bike Leasing Technologies GmbH**  
+- **CEO & Founder**  
+August 2024 - Present  
+Founded and leading Bike Leasing Technologies to revolutionize the bicycle leasing market with an innovative B2B SaaS platform. We are driving efficiency and growth for retailers by automating complex leasing processes.
+
 **BRICKMAKERS GmbH**  
 - **COO**  
-July 2021 - Present  
+July 2021 - July 2024  
 Lead the strategic direction to position BRICKMAKERS as a leader in B2B software solutions, significantly improving our operational efficiency for our clients. Cultivated key partnerships to expand our service offerings and market reach.
 
 - **Team Manager, Mobile**  
