@@ -4,20 +4,20 @@ title: Effektiv bleiben an den wichtigsten Prioritäten arbeiten
 description: Wenn du in einem Umfeld arbeitest, in dem viele unterschiedliche Prioritäten und Aufgaben zu erledigen sind, ist es wichtig, dass du effektiv bleibst und an den wichtigsten Prioritäten arbeitest. Was mir geholfen hat, beschreibe ich hier.
 ---
 
+Als Gründer eines jungen Unternehmens kenne ich das Problem: Die ToDo-Liste wächst täglich, jede Aufgabe scheint dringend und man verzettelt sich schnell. Über die Monate habe ich eine simple Methode entwickelt, die mir hilft, trotz vieler paralleler Aufgaben produktiv zu bleiben.
+
 Ich habe Mitte des Jahres mein neues Unternehmen [Bike Leasing Technologies](https://leasingautomation.de/) gegründet.
 
-Zu Begin habe ich Softwareentwicklung, Vertrieb und Administration selbst gemacht. 
+Zu Beginn habe ich alles selbst gemacht - von der Softwareentwicklung über den Vertrieb bis zur Administration.
 
-<img src="/img/blog-posts/wochenplaner-header.jpg" class="img-fluid" alt="Wochenplaner, an den wichtigsten Prioritäten dran zu bleiben">
+![Wochenplaner, an den wichtigsten Prioritäten dran zu bleiben](/img/blog-posts/wochenplaner-header.jpg)
 
-Hierbei hatte ich am Ende einer Woche zeitweise das Problem, dass viele Aufhaben nicht erledigt waren, ich jedoch auf Grund von vielen dringenden Dingen mehrere Aufgaben parallel begonnen habe. 
+Am Ende einer Woche hatte ich oft das Problem, dass ich zwar an vielen Aufgaben parallel gearbeitet habe, aber wenig wirklich fertig bekommen habe. Ständig kamen dringende Dinge dazwischen.
 
-Das ist nun kein neues Problem , aber was mir geholten hat, ist eine einfache Methode, in der ich anfang der Woche die je wichtigste Aufhabe für den Tag festlege und diese auch wirkliche erledigt haben muss, auch wenn mir zu dem jeweiligen Zeitpunkt andere Dinge wichtiger oder dringender erscheinen.
+Was mir dabei enorm geholfen hat: Ich lege am Anfang der Woche für jeden Tag eine wichtige Aufgabe fest. Diese MUSS ich an dem Tag erledigen - auch wenn mir andere Dinge in dem Moment dringender erscheinen.
 
-Das hat dazu geführt, dass ich insgesamt mehr Aufgaben erledigt habe. Während dem Abarbeiten der Aufgabe habe ich mir dann auch keine Gedanken um andere Aufgaben gemacht.
+Durch diese simple Methode schaffe ich heute deutlich mehr. Während ich an dieser einen Aufgabe arbeite, blende ich bewusst alles andere aus. Die Methode ist einfach genug, dass ich sie jede Woche durchhalte und gibt mir trotzdem die nötige Struktur.
 
-Diese Methode ist ein für mich einfach genug, um sie jede Woche anzuwenden und gibt mir eine gute Mischung aus Flexibilität und Struktur.
+Ich notiere mir die Aufgaben meist auf einem Blatt Papier. Falls du lieber was Vorgedrucktes magst - hier ist eine [PDF Vorlage](https://github.com/jnkwrych/jnkwrych.github.io/raw/master/files/Wochenplaner.pdf) zum Ausdrucken.
 
-Ich schreibe die Aufhaben meist einfach auf ein Blatt Papier, aber hier ist auch eine einfache ![PDF Vorlage](https://github.com/jnkwrych/jnkwrych.github.io/raw/master/files/Wochenplaner.pdf) zum ausdrucken.
-
-Zusätzlich nutze ich für persönliche und langfristige Ziele meinen [Habbits Tracker](/blog/2024/01/01/unternehmer-routinen-produktivitaet-work-life-balance.html).
+Für meine langfristigen Ziele und persönlichen Gewohnheiten nutze ich zusätzlich meinen [Habits Tracker](/blog/2024/01/01/unternehmer-routinen-produktivitaet-work-life-balance.html).
