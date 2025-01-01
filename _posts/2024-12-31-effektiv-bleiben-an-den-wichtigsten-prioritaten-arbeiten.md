@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effektiv bleiben an den wichtigsten Prioritäten arbeiten
+title: Effektiv bleiben und an den wichtigsten Prioritäten arbeiten
 description: Wenn du in einem Umfeld arbeitest, in dem viele unterschiedliche Prioritäten und Aufgaben zu erledigen sind, ist es wichtig, dass du effektiv bleibst und an den wichtigsten Prioritäten arbeitest. Was mir geholfen hat, beschreibe ich hier.
 ---
 
