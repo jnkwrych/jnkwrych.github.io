@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GPT-4 Turbo vs. GPT-4o Mini vs. GPT-3.5 Turbo: Which LLM Works Best for Data Mapping?
-description: I tested GPT-4-turbo, GPT-4o-mini, and GPT-3.5-turbo for structured data extraction. Learn how to balance accuracy, speed, and cost in AI-driven workflows.
+title: "GPT-4 Turbo vs. GPT-4o Mini vs. GPT-3.5 Turbo: Which LLM Works Best for Data Mapping?"
+description: "I tested GPT-4-turbo, GPT-4o-mini, and GPT-3.5-turbo for structured data extraction. Learn how to balance accuracy, speed, and cost in AI-driven workflows."
 ---
 
 LLMs can greatly speed up prototyping for tasks like extracting structured data from PDFs, normalizing it, and mapping it to predefined schemas. I recently tested three models from OpenAI for this purpose, evaluating accuracy, cost, and speed. Here’s a brief summary of my findings.  
