@@ -220,7 +220,7 @@ END Fallback Styles
   }
 }
 
-.highlighter-rouge {
+.language-typescript.highlighter-rouge {
 	margin-bottom: 2rem;
 	border-radius: 1rem;
 	padding: 1rem;
