@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2025-03-31 GPT-4 Turbo vs. GPT-4o Mini vs. GPT-3.5 Turbo: Which LLM Works Best for Data Mapping?
+title: GPT-4 Turbo vs. GPT-4o Mini vs. GPT-3.5 Turbo: Which LLM Works Best for Data Mapping?
 description: Fast LLM prototyping: I tested GPT-4-turbo, GPT-4o-mini, and GPT-3.5-turbo for structured data extraction. Learn how to balance accuracy, speed, and cost in AI-driven workflows.
 ---
 
