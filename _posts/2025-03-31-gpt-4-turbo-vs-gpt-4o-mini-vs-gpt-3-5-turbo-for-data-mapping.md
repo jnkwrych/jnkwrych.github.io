@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GPT-4 Turbo vs. GPT-4o Mini vs. GPT-3.5 Turbo: Which LLM Works Best for Data Mapping?"
+title: "GPT-4 T vs. 4o Mini vs. 3.5 T: Which LLM Works Best for Data Mapping?"
 description: "I tested GPT-4-turbo, GPT-4o-mini, and GPT-3.5-turbo for structured data extraction. Learn how to balance accuracy, speed, and cost in AI-driven workflows."
 ---
 
@@ -14,11 +14,12 @@ LLMs can greatly speed up prototyping for tasks like extracting structured data 
 To compare model performance, I set up a small test suite with different PDF documents, each containing various formatting styles, product descriptions, and pricing structures. This allowed me to systematically measure how well each model handled the same inputs across different scenarios.  
 
 ### Models Tested  
-| Model               | OpenAI SDK Name          | Quality | Speed (vs. GPT-3.5) | Cost (vs. GPT-3.5) |  
-|---------------------|------------------------|---------|---------------------|--------------------|  
-| [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-turbo) | `gpt-4-0125-preview`  | ✅✅✅ Best | ~2x slower | ~3x more expensive |  
-| [GPT-4o Mini](https://platform.openai.com/docs/models/gpt-4o)  | `gpt-4o-mini`  | ✅ Decent | ~1.5x slower | ~2x more expensive |  
-| [GPT-3.5 Turbo](https://platform.openai.com/docs/models/gpt-3-5) | `gpt-3.5-turbo-0125` | ✅ Decent | Fastest (Baseline) | Cheapest |  
+
+| Model | OpenAI SDK Name | Quality | Speed (vs. GPT-3.5) | Cost (vs. GPT-3.5) |  
+|-------|-----------------|---------|---------------------|---------------------|  
+| [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-turbo) | `gpt-4-0125-preview` | ✅✅✅ Best | ~2x slower | ~3x more expensive |  
+| [GPT-4o Mini](https://platform.openai.com/docs/models/gpt-4o) | `gpt-4o-mini` | ✅ Decent | ~1.5x slower | ~2x more expensive |  
+| [GPT-3.5 Turbo](https://platform.openai.com/docs/models/gpt-3-5) | `gpt-3.5-turbo-0125` | ✅ Decent | Fastest (Baseline) | Cheapest |
 
 ### Prototypical Setup in TypeScript  
 A simple setup for sending structured data to OpenAI’s API and normalizing it with Zod:  
@@ -49,8 +50,6 @@ async function normalizeProductData(text: string) {
 // Example usage
 normalizeProductData("Trek Domane SL 6, Carbon Road Bike, 3499€").then(console.log).catch(console.error);
 ```
-
-For a more advanced real-world example, check out [@steven-tey’s open-source LLM starter](https://github.com/steven-tey/llm-starter), which showcases a streamlined approach to working with OpenAI in a Next.js setup.  
 
 ### Key Takeaways  
 - **GPT-3.5 Turbo** was surprisingly good for schema validation but struggled with very complex mappings (e.g., identifying product categories from descriptions).  
