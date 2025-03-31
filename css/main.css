@@ -219,3 +219,10 @@ END Fallback Styles
     background-size: 150px 150px;
   }
 }
+
+.highlighter-rouge {
+	margin-bottom: 2rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	border: 1px solid #e5e5e5;
+}
