@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Devlog #1: Why I'm Building MagicExtract (And the Prompt That Started It)"
-date: 2026-03-24
+published: false
+date: 2026-04-24
 categories: [ai, engineering, building-in-public]
 ---
 
