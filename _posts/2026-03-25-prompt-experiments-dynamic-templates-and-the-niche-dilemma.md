@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Devlog #2: Prompt Sensitivity and the Discovery of Dynamic Templates"
-date: 2026-03-25
+published: false
+date: 2026-04-25
 categories: [ai, engineering, building-in-public]
 ---
 
