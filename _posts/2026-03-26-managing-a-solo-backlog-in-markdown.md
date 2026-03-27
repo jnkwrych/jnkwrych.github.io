@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Devlog #3: Keeping an AI workflow first backlog (lean)"
-date: 2026-03-25
+title: "Devlog #3: Keeping a backlog for a AI-first-workflow"
+published: false
+date: 2026-04-26
 categories: [ai, engineering, building-in-public]
 ---
 
