@@ -43,6 +43,8 @@ _This list is in no particular order. I tried to come up with everything that I 
 - Set two phone alarms daily: 'Don’t worry 💪' for mornings before work and 'Don’t worry 🙃' for evenings. Saves my mood and energy 2 out of 7 days a week.
 
 - Never use TikTok, Instagram, or YouTube (yes, even YouTube)! Trust me. While YouTube is a great source of education, it was the sneakiest time-waster for me. Looks useful on the outside. 99% time wasted.
+  
+- Community engagement. When I was most stressed about my startup, I started coaching my kid’s football team. It’s draining, but somehow it keeps me sane.
 
 - Exercise three times a week. No excuses. None. Just do it.
 
