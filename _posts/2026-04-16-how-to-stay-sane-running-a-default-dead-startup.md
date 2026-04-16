@@ -8,9 +8,12 @@ I’m in my 40s, have a family, kids, and my startup is [default dead](https://w
 
 This post started as a note to myself. But as I wrote it, I realized that I’m in a horrible situation, yet I feel calmer and think more clearly than before.
 
-I’m a 41-year-old father of three. My wife and I run a business with two employees. I founded it two years ago, but it’s on a disastrous trajectory. A former partner, a company 400 times our size, is poaching my customers and blocking my access to the niche market we are in.
+I’m a 41-year-old father of three. My wife and I run a business with two employees. I founded it two years ago, but it’s on a disastrous trajectory. A former partner, a company a lot of times our size, is poaching my customers and blocking my access to the niche market we are in.
 
-But I’m calm. I sleep well. I think clearly. I live a normal life. One year ago I felt very differently.
+But I’m calm. I sleep well. I think clearly. I live a normal life. 
+
+One year ago I felt very differently. This affected my overall mental state and my decision making in company matters negatively.  
+
 
 **This is what keeps me sane and energized. Maybe it’ll help you too.**
 
@@ -32,7 +35,7 @@ _This list is in no particular order. I tried to come up with everything that I 
 
 - Keep an eye on your use of LLMs and avoid over-reliance. Avoid long LLM conversations. I feel ChatGPT especially tries to lure you in with its infamous follow-up questions and cliffhangers. 
 
-- Regarding the planning of your personal and business life: Don’t overengineer this! Make a rough plan or roadmap for the year ahead. What do you want to achieve? Check it briefly at least every 7 months, at most every 4 months for progress and if you are on track. But don't stress about it too much.  
+- Regarding the planning of your personal and business life: Don’t overengineer this! Make a rough roadmap for the year. I only check it every 4 to 7 months. Why? Because obsessing over the map every week triggers too many short-term 'course corrections' that prevent you from actually reaching the destination. You need enough time for your actions to produce real data, not just noise.  
 
 - If you have done a plan or roadmap for the last year review how well that went. In the quiet time of December, after the holidays.
 
